@@ -32,4 +32,8 @@ class User extends Authenticatable
         
         return $this->HasOne(Profile::class);
     }
+    public function experience () {
+        
+        return $this->HasOne(Experience::class);
+    }
 }
