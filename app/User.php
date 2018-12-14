@@ -33,7 +33,9 @@ class User extends Authenticatable
         return $this->HasOne(Profile::class);
     }
     public function experience () {
-        
         return $this->HasOne(Experience::class);
+    }
+    public function posts() {
+        return $this->HasMany(Post::class);
     }
 }
